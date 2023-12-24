@@ -1,27 +1,33 @@
 name: Deploy to cPanel
 
 on:
- push:
-  branches:
-    - main
+  push:
+    branches:
+      - main
 
 jobs:
- deploy:
-  runs-on: ubuntu-latest
+  deploy:
+    runs-on: ubuntu-latest
 
-  steps:
-  - name: Install lftp
-    run: sudo apt install lftp
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
-  - name: Configure lftp
-    run: |
-      mkdir ~/.lftp
-      echo "set ssl:verify-certificate false;" >> ~/.lftp/rc
+    - name: Install lftp
+      run: sudo apt install lftp
 
-  - name: Load Secrets
-    run: |
-      echo "machine ${{ secrets.FTP_SERVER }} login ${{ secrets.FTP_USERNAME }} password ${{ secrets.FTP_PASSWORD }}" > ~/.netrc
+    - name: Configure lftp
+      run: |
+        mkdir ~/.lftp
+        echo "set ssl:verify-certificate false;" >> ~/.lftp/rc
 
-  - name: Upload contents
-    run: |
-      lftp -e "mirror --only-newer --parallel=100 -R . /links.shubhamlal.in/" ${{ secrets.FTP_SERVER }}
+    - name: Load Secrets
+      run: |
+        echo "machine ${{ secrets.FTP_SERVER }} login ${{ secrets.FTP_USERNAME }} password ${{ secrets.FTP_PASSWORD }}" > ~/.netrc
+
+    - name: Change to project directory
+      run: cd $GITHUB_WORKSPACE
+
+    - name: Upload contents
+      run: |
+        lftp -e "mirror --only-newer --parallel=100 -R ./ /links.shubhamlal.in/" ${{ secrets.FTP_SERVER }}
