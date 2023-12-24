@@ -24,4 +24,4 @@ jobs:
 
   - name: Upload contents
     run: |
-      lftp -e "mirror --only-newer --parallel=100 -R ./ /links.shubhamlal.in/" ${{ secrets.FTP_SERVER }}
+      lftp -e "mirror --only-newer --parallel=100 -R . /links.shubhamlal.in/" ${{ secrets.FTP_SERVER }}
