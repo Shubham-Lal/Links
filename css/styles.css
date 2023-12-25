@@ -81,17 +81,26 @@ a {
     overflow-y: auto;
 }
 
-.image-container {
-    width: 96px;
-    height: 96px;
-    overflow: hidden;
+.avatar-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    justify-self: center;
+    animation: profile__animate 8s ease-in-out infinite 1s;
 }
 
-.image-container img {
-    width: 100%;
-    height: 100%;
-    border-radius: 48px;
-    object-fit: contain;
+@keyframes profile__animate {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
 }
 
 .tile {
@@ -126,6 +135,12 @@ a {
 }
 
 .tile:hover {
-    transition: cubic-bezier(0.07, 1.41, 0.82, 1.41) 0.2s;
+    border-color: rgba(255, 255, 255, 0.1);
     transform: scale(1.02);
+    transition: transform cubic-bezier(0.07, 1.41, 0.82, 1.41) 0.2s;
+}
+
+.tile:hover p {
+    transform: scale(1.25);
+    transition: all ease-out 0.2s;
 }
