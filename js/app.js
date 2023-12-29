@@ -1,4 +1,3 @@
-const websiteButton = document.querySelector('.share-button');
 const shareButtons = document.querySelectorAll('.tile-share-button');
 
 async function copyText(e) {
@@ -13,5 +12,4 @@ async function copyText(e) {
     }
 };
 
-websiteButton.addEventListener('click', copyText);
 shareButtons.forEach(shareButton => shareButton.addEventListener('click', copyText));

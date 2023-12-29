@@ -28,14 +28,6 @@ body {
     object-fit: cover;
 }
 
-header {
-    width: 100%;
-    max-width: 680px;
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px;
-}
-
 h1 {
     font-size: 35px;
     margin-top: 8px;
@@ -49,31 +41,12 @@ a {
     font-weight: bold;
 }
 
-.share-button {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: rgb(240, 240, 240);
-    cursor: pointer;
-}
-
-.share-button svg {
-    margin-left: 11.5px;
-    margin-top: 11px;
-    color: rgb(0, 0, 0);
-}
-
-.share-button:hover {
-    transform: scale(0.9);
-    transition: transform ease 0.2s;
-}
-
 .container {
     width: 100%;
     max-width: 680px;
-    height: calc(100svh - 60px);
+    height: 100svh;
     margin: 0 10px;
-    padding: 20px 10px 0 10px;
+    padding: 50px 10px 0 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,7 +80,7 @@ a {
     width: 100%;
     background-color: rgb(37, 37, 37);
     margin: 7px;
-    border: 2px solid white;
+    border: 2px solid rgba(255, 255, 255, 0.1);
     border-radius: 17px;
     display: flex;
     align-items: center;
@@ -131,11 +104,11 @@ a {
 
 .tile-share-button svg {
     margin-left: 11.5px;
-    margin-top: 11px;
+    margin-top: 11.5px;
 }
 
 .tile:hover {
-    border-color: rgba(255, 255, 255, 0.1);
+    border-color: white;
     transform: scale(1.02);
     transition: transform cubic-bezier(0.07, 1.41, 0.82, 1.41) 0.2s;
 }
