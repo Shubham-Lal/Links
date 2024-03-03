@@ -37,6 +37,8 @@ jobs:
       run: |
         npm install
         npm run build
+      env:
+        VITE_TRACKING_ID: ${{ secrets.VITE_TRACKING_ID }}
 
     - name: Upload contents
       run: |
