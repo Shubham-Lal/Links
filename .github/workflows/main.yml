@@ -30,9 +30,11 @@ jobs:
       run: |
         echo "machine ${{ secrets.FTP_SERVER }} login ${{ secrets.FTP_USERNAME }} password ${{ secrets.FTP_PASSWORD }}" > ~/.netrc
 
+    - name: Change to project directory
+      run: cd $GITHUB_WORKSPACE
+
     - name: Install dependencies and build frontend
       run: |
-        cd client
         npm install
         npm run build
 
