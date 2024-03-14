@@ -1,13 +1,10 @@
 import ReactGA from 'react-ga4';
-import { useState } from 'react';
 import './App.css';
 
 const TRACKING_ID = import.meta.env.VITE_TRACKING_ID;
 ReactGA.initialize(TRACKING_ID);
 
 export default function App() {
-  const [link, setLink] = useState('');
-
   const copyText = async (e, link) => {
     e.preventDefault();
     try {
@@ -20,10 +17,10 @@ export default function App() {
 
   return (
     <>
-      <img id="backgroundTemplate" src="/background.jpg" alt="Background Template" />
+      <img id="backgroundTemplate" src="/background.jpg" alt="" />
 
       <div className="container">
-        <img className="avatar-img" src="/logo.jpg" alt="Shubham Lal Avatar" />
+        <img className="avatar-img" src="/ShubhamLal.jpg" alt="" />
         <h1>Shubham Lal</h1>
         <a className="tile" href="https://shubhamlal.in/files/Resume-Shubham-Lal.pdf" target="_blank" rel="noreferrer">
           <div className="icon">

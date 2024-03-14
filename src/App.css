@@ -23,7 +23,7 @@ body {
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 30px;
   margin-top: 8px;
   margin-bottom: 30px;
   font-family: 'Poppins', sans-serif;
@@ -50,6 +50,7 @@ a {
 .avatar-img {
   width: 150px;
   height: 150px;
+  object-fit: contain;
   border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   justify-self: center;
   animation: profile__animate 8s ease-in-out infinite 1s;
