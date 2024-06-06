@@ -22,7 +22,7 @@ export default function App() {
       <div className="container">
         <img className="avatar-img" src="/ShubhamLal.jpg" alt="" />
         <h1>Shubham Lal</h1>
-        <a className="tile" href="https://shubhamlal.in/files/Resume-Shubham-Lal.pdf" target="_blank" rel="noreferrer">
+        <a className="tile" href="Resume-Shubham_Lal.pdf" target="_blank" rel="noreferrer">
           <div className="icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
               <rect width="100%" height="100%" fill="none" />
