@@ -8,24 +8,24 @@
 }
 
 body {
-  background-color: rgb(10, 10, 10);
+  background-color: #000000;
   color: rgb(240, 240, 240);
 }
 
 #backgroundTemplate {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: -1;
   width: 100vw;
-  height: 100svh;
+  height: 100dvh;
   object-fit: cover;
 }
 
 h1 {
   font-size: 30px;
-  margin-top: 8px;
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -40,9 +40,6 @@ a {
   max-width: 680px;
   margin: 0 auto;
   padding: 50px 10px 0 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -51,8 +48,8 @@ a {
   width: 150px;
   height: 150px;
   object-fit: contain;
-  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   justify-self: center;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   animation: profile__animate 8s ease-in-out infinite 1s;
 }
 
@@ -70,15 +67,36 @@ a {
   }
 }
 
+.about {
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.links {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .tile {
   width: 100%;
   background-color: rgb(37, 37, 37);
-  margin: 7px;
   border: 2px solid rgba(255, 255, 255, 0.1);
   border-radius: 17px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: 17px;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -108,6 +126,6 @@ a {
 }
 
 .tile:hover p {
-  transform: scale(1.25);
+  transform: scale(1.15);
   transition: all ease-out 0.2s;
 }
