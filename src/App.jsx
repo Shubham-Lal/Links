@@ -2,7 +2,7 @@ import './App.css'
 import ReactGA from 'react-ga4'
 import { linksData } from './Links'
 
-ReactGA.initialize(import.meta.env.VITE_TRACKING_ID)
+// ReactGA.initialize(import.meta.env.VITE_TRACKING_ID)
 
 export default function App() {
   const copyText = async (e, link) => {

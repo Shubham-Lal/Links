@@ -1,7 +1,7 @@
 export const linksData = [
     {
         title: "Resume",
-        link: "https://links.shubhamlal.in/Resume-Shubham_Lal.pdf",
+        link: "https://shubham.ubix.agency/Resume-Shubham_Lal.pdf",
         icon: (
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
                 <rect width="100%" height="100%" fill="none" />
@@ -22,7 +22,7 @@ export const linksData = [
     },
     {
         title: "Insights",
-        link: "https://shubhamlal.in",
+        link: "https://shubhamlal.vercel.app",
         icon: (
             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 512 512">
                 <polyline points="196 220 260 220 260 392"
