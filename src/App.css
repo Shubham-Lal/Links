@@ -38,7 +38,7 @@ a {
   width: 100%;
   max-width: 680px;
   margin: 0 auto;
-  padding: 50px 10px 0 10px;
+  padding: 50px 10px;
   overflow-x: hidden;
   overflow-y: auto;
 }

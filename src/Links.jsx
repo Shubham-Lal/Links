@@ -1,7 +1,7 @@
 export const linksData = [
     {
         title: "Resume",
-        link: "https://shubham.ubix.agency/Resume-Shubham_Lal.pdf",
+        link: "/Resume-Shubham_Lal.pdf",
         icon: (
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
                 <rect width="100%" height="100%" fill="none" />
@@ -21,19 +21,6 @@ export const linksData = [
         )
     },
     {
-        title: "Insights",
-        link: "https://shubhamlal.vercel.app",
-        icon: (
-            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 512 512">
-                <polyline points="196 220 260 220 260 392"
-                    style={{ fill: "none", stroke: "currentcolor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "40px" }} />
-                <line x1="187" y1="396" x2="325" y2="396"
-                    style={{ fill: "none", stroke: "currentcolor", strokeLinecap: "round", strokeMiterlimit: 10, strokeWidth: "40px" }} />
-                <path fill="currentColor" d="M256,160a32,32,0,1,1,32-32A32,32,0,0,1,256,160Z" />
-            </svg>
-        )
-    },
-    {
         title: "Portfolio",
         link: "https://shubhamlal.pages.dev",
         icon: (
@@ -44,6 +31,19 @@ export const linksData = [
                     <g id="icomoon-ignore"> </g>
                     <path d="M19.732 7.203v-2.666h-7.464v2.666h-9.063v20.259h25.59v-20.259h-9.063zM13.334 5.604h5.331v1.599h-5.331v-1.599zM12.268 8.27h15.461v8.53h-7.997v-2.133h-7.464v2.133h-7.997v-8.53h7.997zM18.666 15.733v3.199h-5.331v-3.199h5.331zM4.271 26.396v-8.53h7.997v2.133h7.464v-2.133h7.997v8.53h-23.457z" fill="currentColor"> </path>
                 </g>
+            </svg>
+        )
+    },
+    {
+        title: "Insights",
+        link: "https://shubhamlal.vercel.app",
+        icon: (
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 512 512">
+                <polyline points="196 220 260 220 260 392"
+                    style={{ fill: "none", stroke: "currentcolor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "40px" }} />
+                <line x1="187" y1="396" x2="325" y2="396"
+                    style={{ fill: "none", stroke: "currentcolor", strokeLinecap: "round", strokeMiterlimit: 10, strokeWidth: "40px" }} />
+                <path fill="currentColor" d="M256,160a32,32,0,1,1,32-32A32,32,0,0,1,256,160Z" />
             </svg>
         )
     },
@@ -100,6 +100,33 @@ export const linksData = [
                 </g>
             </svg>
         )
+    },
+    {
+        title: "Upwork",
+        link: "https://www.upwork.com/freelancers/~013bd622da98c11a7f",
+        icon: (
+            <svg viewBox=".26 -.21 500 500" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <path d="m359.92 303.51c-31.11 0-51.69-24.01-57.45-33.35 7.36-59.01 28.93-77.61 57.45-77.61 28.18 0 50.13 22.53 50.13 55.48s-21.95 55.48-50.13 55.48m0-147.18c-50.71 0-79.13 33.07-87.25 67.12-9.24-17.34-16.04-40.54-21.4-62.1h-70.09v87.24c0 31.7-14.38 55.07-42.59 55.07s-44.37-23.37-44.37-55.06l.3-87.25h-40.4v87.24c0 25.47 8.26 48.56 23.26 65.04 15.48 16.98 36.64 25.95 61.19 25.95 48.78 0 82.81-37.41 82.81-90.96v-58.62c5.14 19.29 17.2 56.39 40.41 88.92l-21.68 123.44h41.08l14.31-87.52c4.7 3.89 9.68 7.41 14.9 10.55a90.604 90.604 0 0 0 45.69 14.09h.08c1.21 0 2.44.07 3.69.07 50.29 0 90.34-38.94 90.34-91.43.01-52.52-40-91.79-90.28-91.79" fill="currentColor" />
+            </svg>
+        ),
+    },
+    {
+        title: "Fiverr",
+        link: "https://www.fiverr.com/lal_shubham",
+        icon: (
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none" viewBox="0 0 24 24" id="fiverr">
+                <path fill="currentColor" stroke-linejoin="round" d="M11 21H7V13H4V9H7V8C7 5.23858 9.23858 3 12 3H13.5V6.28571C13.5 6.6802 13.1802 7 12.7857 7C11.7995 7 11 7.79949 11 8.78571V9H19V21H15V13H11V21Z"></path>
+            </svg>
+        ),
+    },
+    {
+        title: "Freelancer",
+        link: "https://www.freelancer.in/u/lalshubham",
+        icon: (
+            <svg viewBox="-0.23 0 97.266 72.333" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                <path d="M56.897 0l6.624 9.29L97.036 0M22.075 72.333l18.13-17.725-10.912-11.71M54.152 0l-9.69 8.738 16.298.608M16.482 0l3.48 7.133 19.18 1.195M26.75 36.986l14.17-26.434L-.23 8.328M28.4 38.662L41.785 53.04 56.55 38.567l4.582-26.957-17.993-.918" fill="currentColor" />
+            </svg>
+        ),
     },
     {
         title: "Contact Me",
