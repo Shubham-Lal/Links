@@ -24,7 +24,7 @@ export default function App() {
 
         <p className="about">
           <span>Hello, I&apos;m Shubham, a Junior Developer with over 2+ year of experience.</span>
-          <span>Currently, I am working as Freelance Developer at <a href="https://ubix.agency" target="_blank" rel="noreferrer">Ubix Agency</a>.</span>
+          <span>Currently, I am buidling <a href="https://prodsaas.com" target="_blank" rel="noreferrer">ProdSaaS</a>.</span>
           <span>Below are some of the useful links. Do check those out.</span>
         </p>
 
