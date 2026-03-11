@@ -34,19 +34,19 @@ export const linksData = [
             </svg>
         )
     },
-    {
-        title: "Insights",
-        link: "https://shubhamlal.vercel.app",
-        icon: (
-            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 512 512">
-                <polyline points="196 220 260 220 260 392"
-                    style={{ fill: "none", stroke: "currentcolor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "40px" }} />
-                <line x1="187" y1="396" x2="325" y2="396"
-                    style={{ fill: "none", stroke: "currentcolor", strokeLinecap: "round", strokeMiterlimit: 10, strokeWidth: "40px" }} />
-                <path fill="currentColor" d="M256,160a32,32,0,1,1,32-32A32,32,0,0,1,256,160Z" />
-            </svg>
-        )
-    },
+    // {
+    //     title: "Insights",
+    //     link: "https://shubhamlal.vercel.app",
+    //     icon: (
+    //         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 512 512">
+    //             <polyline points="196 220 260 220 260 392"
+    //                 style={{ fill: "none", stroke: "currentcolor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "40px" }} />
+    //             <line x1="187" y1="396" x2="325" y2="396"
+    //                 style={{ fill: "none", stroke: "currentcolor", strokeLinecap: "round", strokeMiterlimit: 10, strokeWidth: "40px" }} />
+    //             <path fill="currentColor" d="M256,160a32,32,0,1,1,32-32A32,32,0,0,1,256,160Z" />
+    //         </svg>
+    //     )
+    // },
     {
         title: "GitHub",
         link: "https://github.com/Shubham-Lal",
